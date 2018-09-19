@@ -1,0 +1,24 @@
+# 2K RClick Aim
+size 1920 1080
+switch-mouse
+wait 50
+touch 67 63
+wait 450
+touch 739 353
+wait 50
+touch 1378 942
+wait 50
+switch-mouse
+
+
+# RClick Aim
+size 1920 1080
+switch-mouse
+wait 50
+touch 82 59
+wait 450
+touch 625 342
+wait 50
+touch 1400 940
+wait 50
+switch-mouse
