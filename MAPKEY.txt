@@ -1,0 +1,35 @@
+# <T> no grass no tree no house 484 356
+size 1920 1080
+switch-mouse
+wait 50
+touch 66 66
+wait 350
+touch 484 356
+wait 100
+touch 1400 940
+wait 50
+switch-mouse
+
+# <O> no recoil 484 496
+size 1920 1080
+switch-mouse
+wait 50
+touch 66 66
+wait 450
+touch 484 496
+wait 100
+touch 1400 940
+wait 50
+switch-mouse
+
+# <P> antenna prone backpack 484 636
+size 1920 1080
+switch-mouse
+wait 50
+touch 66 66
+wait 350
+touch 484 786
+wait 100
+touch 1400 940
+wait 50
+switch-mouse
