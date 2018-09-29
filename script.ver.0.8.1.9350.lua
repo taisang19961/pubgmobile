@@ -208,9 +208,9 @@ function AimbotHeadshot()
     gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.getResults(10)
-    gg.editAll("500", gg.TYPE_FLOAT)
+    gg.editAll("250", gg.TYPE_FLOAT)
     gg.clearResults()
-    gg.toast("AimbotHeadshot 90% has been active")
+    gg.toast("AimbotHeadshot 70% has been active")
 end
 
 -- //////////  //////////  //////////  //////////  //////////
@@ -706,6 +706,24 @@ function BypassV2()
     gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
     gg.clearResults(850)
     gg.toast("Bypass v2 has been active")
+end
+
+function Tutorial()
+    print([[
+|[ TUTORIAL ]|
+
+(*) Open your gameguardian app (when selected process popup, press back button).
+(*) Running your script and allow request internet access.
+(*) Wait for a few second after the cheat showing menu.
+(*) Press back button to home screen for bypass popup.
+(*) Open your pubg app (if non root you must run it in pararel space).
+(*) So fastly, press gameguardian icon then select pubg process.
+(*) The last your must press bypass now function in menu cheat.
+(*) Waiting bypass finished and enjoy your game.
+
+- Video : https://youtu.be/RWn8R5P9FDc
+
+]])
 end
 
 gg.setVisible(false)
