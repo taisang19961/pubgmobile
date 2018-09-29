@@ -1,5 +1,5 @@
 title = " 😈 【 http://tiny.cc/taideptrai 】ver 0.8.1.9350  😈 "
-
+updated = "Last updated at :\n11:54 PM Saturday, September 29, 2018 (GMT+7)"
 
 function MenuHome()
     menu =
@@ -189,7 +189,7 @@ function NoRecoil()
     gg.searchNumber("176293393", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
     gg.getResults(100)
     gg.editAll("0", gg.TYPE_DWORD)
-    gg.toast("NoRecoil has been active")
+    gg.toast("NoRecoil : active this if you change gun")
 end
 
 function AimbotHeadshot()
@@ -624,7 +624,7 @@ end
 -- //////////  //////////  //////////  //////////  //////////
 
 function SelectBypass()
-    ASKBYPASS = gg.alert("Select bypass mode :", "Skip", "Bypass v1 (fast)", "Bypass v2 (emulator)")
+    ASKBYPASS = gg.alert(updated .. "\nSelect bypass mode :", "Skip", "Bypass v1 (fast)", "Bypass v2 (emulator)")
     gg.setVisible(false)
     if ASKBYPASS == 1 then
         MenuHome()
