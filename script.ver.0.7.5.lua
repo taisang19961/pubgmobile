@@ -106,8 +106,10 @@ gg.editAll("0.07", gg.TYPE_FLOAT)
 gg.toast("No Grass/Tree/House has been active")
 end
 function FastInGame()
-FullAntenna()
+Antenna()
 NoRecoil()
+Aimbot()
+Headshot()
 end
 function FastLobby() 
 end
@@ -158,7 +160,6 @@ gg.clearResults()
 gg.toast("Antenna Backpack has been active")
 
 gg.clearResults(850)
-gg.toast("Antenna is Processing Now....")
 gg.searchNumber("0.9378669858F;1.0F;0.61365610361F::55", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(850)
