@@ -12,7 +12,7 @@ function MenuHome()
             "[5] ➤ [MENU] ANTENNA/OBJECT",
             "[6] ➤ [MENU] VEHICLE/SPEED",
             "[7] ➤ [MENU] HIGH VIEW",
-            "[8] ➤ [COMBO] BADASS\n↪ 「Headshot, Aimbot, No Recoil, Antenna, High View Up」",
+            "[8] ➤ [COMBO] BADASS\n↪ 「Aimbot, No Recoil, Magic Bullet, Antenna, High View Up」",
             "[9] ➤ [COMBO] NORMAL\n↪ 「Headshot, No Recoil, Antenna」"
         },
         nil,
@@ -50,15 +50,15 @@ function MenuHome()
 end
 
 function ComboBadass()
-    AimbotHeadshot()
-    AimbotUltra()
+    -- Aimbot() -- banned
     NoRecoil()
+    -- MagicBullet() -- banned
     Antenna()
     HighViewUp()
 end
 
 function ComboNormal()
-    AimbotHeadshot()
+    Headshot()
     NoRecoil()
     Antenna()
 end
@@ -71,8 +71,8 @@ function MenuAttack()
     menu =
         gg.multiChoice(
         {
-            "[1] ➤ Aimbot Ultra\n↪ 「Lobby」「Landed」「Once」",
-            "[2] ➤ Aimbot Headshot\n↪ 「Lobby」「Landed」「Once」",
+            "[1] ➤ Aimbot\n↪ 「Lobby」「Landed」「Once」",
+            "[2] ➤ Headshot\n↪ 「Lobby」「Landed」「Once」",
             "[3] ➤ Magic Bullet\n↪ 「Ingame」「Landed」「Everymatch」",
             "[4] ➤ Wallshoot\n↪ 「Ingame」「Landed」「Everymatch」",
             "[5] ➤ Small Crosshair\n↪ 「Lobby」「Landed」「Once」",
@@ -85,10 +85,10 @@ function MenuAttack()
     if menu == nil then
     else
         if menu[1] == true then
-            AimbotUltra()
+            Aimbot()
         end
         if menu[2] == true then
-            AimbotHeadshot()
+            Headshot()
         end
         if menu[3] == true then
             MagicBullet()
@@ -122,23 +122,8 @@ function MenuAttack()
     THISSCRIPT = -1
 end
 
-function AimbotUltra()
-    gg.toast("Aimbot Medium is Working...")
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("3.5F;1F;1F;1F;200F;20F:512", gg.TYPE_DWORD, false)
-    gg.searchNumber("200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(850)
-    gg.editAll("9999", gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("3.5F;1F;1F;1F;9999F;20F:512", gg.TYPE_DWORD, false)
-    gg.searchNumber("3.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(850)
-    gg.editAll("-9999", gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.toast("Aimbot Medium Active!")
-    gg.toast("AimbotUltra has been active")
+function Aimbot()
+
 end
 
 function MagicBullet()
@@ -192,7 +177,7 @@ function NoRecoil()
     gg.toast("NoRecoil : active this if you change gun")
 end
 
-function AimbotHeadshot()
+function Headshot()
     gg.setRanges(gg.REGION_BAD)
     gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -210,7 +195,7 @@ function AimbotHeadshot()
     gg.getResults(10)
     gg.editAll("250", gg.TYPE_FLOAT)
     gg.clearResults()
-    gg.toast("AimbotHeadshot 70% has been active")
+    gg.toast("Headshot 70% has been active")
 end
 
 -- //////////  //////////  //////////  //////////  //////////
