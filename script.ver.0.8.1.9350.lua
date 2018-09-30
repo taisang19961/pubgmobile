@@ -13,7 +13,7 @@ function MenuHome()
             "[6] ➤ [MENU] VEHICLE/SPEED",
             "[7] ➤ [MENU] HIGH VIEW",
             "[8] ➤ [COMBO] BADASS\n↪ 「Aimbot, No Recoil, Magic Bullet, Antenna, High View Up」",
-            "[9] ➤ [COMBO] NORMAL\n↪ 「Headshot, No Recoil, Antenna」"
+            "[9] ➤ [COMBO] NORMAL\n↪ 「Headshot, No Recoil, Antenna, High View Up」"
         },
         nil,
         title
@@ -50,9 +50,10 @@ function MenuHome()
 end
 
 function ComboBadass()
-    -- Aimbot() -- banned
+    gg.alert("Banned dont use")
+    Aimbot() -- banned
     NoRecoil()
-    -- MagicBullet() -- banned
+    MagicBullet() -- banned
     Antenna()
     HighViewUp()
 end
@@ -61,6 +62,7 @@ function ComboNormal()
     Headshot()
     NoRecoil()
     Antenna()
+    HighViewUp()
 end
 
 -- //////////  //////////  //////////  //////////  //////////
