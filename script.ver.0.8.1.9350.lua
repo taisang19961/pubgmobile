@@ -13,8 +13,8 @@ function MenuHome()
             "[6] ➤ [MENU] Vehicle / Speed",
             "[7] ➤ [MENU] High view",
             "[8] ➤ [MENU] Wallhack / Color",
-            "[9] ➤ [COMBO] Badass 「Aimbot, No Recoil, Magic Bullet, Antenna, High View Up」",
-            "[10] ➤ [COMBO] Normal 「Headshot, No Recoil, Antenna, High View Up」"
+            "[9] ➤ [COMBO] Badass 「No recoil, Magic Bullet, Aimbot, Antenna, HighViewUp」",
+            "[10] ➤ [COMBO] Normal 「No recoil, Headshot,  Antenna, HighViewUp」」"
         },
         nil,
         title
@@ -54,9 +54,9 @@ function MenuHome()
 end
 
 function ComboBadass()
-    Aimbot()
-    MagicBullet()
     NoRecoil()
+    MagicBullet()
+    Aimbot()
     Antenna()
     HighViewUp()
 end
@@ -126,20 +126,55 @@ function MenuAttack()
     THISSCRIPT = -1
 end
 
+function AimbotUltraSevenAmmo()
+    gg.clearResults()
+    gg.searchNumber("3.5;1;0.5;200;20::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll("999", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("-88.82363891602F;15.0F;1", gg.TYPE_FLOAT)
+    gg.searchNumber("1", gg.TYPE_FLOAT)
+    gg.getResults(1000)
+    gg.editAll("20000000000000", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("AimbotUltraSevenAmmo Active")
+end
+
 function Aimbot()
+    AimbotUltraSevenAmmo()
+end
+
+function AimbotMedium()
     gg.clearResults()
     gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("30;30;0.3;0.3;80;25;220::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("0.3", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(10)
-    gg.editAll("0.05", gg.TYPE_FLOAT)
-    gg.clearResults()
+    gg.searchNumber("0.83333331347;1;0.83333331347::321", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("0.83333331347", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("0.000001", gg.TYPE_FLOAT)
     gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("36;1065353216;50528513;1203982336:", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("1065353216", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(10)
-    gg.editAll("1,090,519,040", gg.TYPE_DWORD)
-    gg.toast("Medium Aimbot Active")
+    gg.searchNumber("16;26::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("16", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(5)
+    gg.editAll("200", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("200;26::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(5)
+    gg.editAll("-100", gg.TYPE_FLOAT)
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(2)
+    gg.editAll("99", gg.TYPE_FLOAT)
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("90.485692749;27.25;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("27.25;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(2)
+    gg.editAll("99", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Aimbot Medium Active")
     gg.clearResults()
 end
 
