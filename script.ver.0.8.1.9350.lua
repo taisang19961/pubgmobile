@@ -1,5 +1,5 @@
 title = " 😈 【 http://tiny.cc/taideptrai 】ver 0.8.1.9350  😈 "
-updated = "Last updated at :\n11:54 PM Saturday, September 29, 2018 (GMT+7)"
+updated = ""
 
 function MenuHome()
     menu =
