@@ -2243,29 +2243,29 @@ end
 -- //////////  //////////  //////////  //////////  //////////
 
 function SelectBypass()
-    ASKBYPASS = gg.alert(updated .. "\nSelect bypass mode :", "Skip", "mobile", "emulator")
+    ASKBYPASS = gg.alert(updated .. "\nSelect bypass mode :", "mobile", "emulator", "Skip")
     gg.setVisible(false)
-    if ASKBYPASS == 1 then
+    if ASKBYPASS == 3 then
         MenuHome()
     end
-    if ASKBYPASS == 2 then
-        BypassV1()
+    if ASKBYPASS == 1 then
+        BypassMobile()
     end
-    if ASKBYPASS == 3 then
-        BypassV2()
+    if ASKBYPASS == 2 then
+        BypassEmulator()
     end
 end
 
-function BypassV1()
-    gg.toast("Activating Bypass v1 ...")
+function BypassMobile()
+    gg.toast("Activating Bypass Mobile ...")
     gg.clearResults()
     gg.searchNumber("1", gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, 1.8446744E19)
     gg.clearResults()
-    gg.toast("Bypass v1 has been active")
+    gg.toast("Bypass Mobile has been active")
 end
 
-function BypassV2()
-    gg.toast("Activating Bypass v2 ...")
+function BypassEmulator()
+    gg.toast("Activating Bypass Emulator ...")
     gg.clearResults()
     gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -2316,7 +2316,7 @@ function BypassV2()
     gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
     gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
     gg.clearResults(850)
-    gg.toast("Bypass v2 has been active")
+    gg.toast("Bypass Emulator has been active")
 end
 
 function Tutorial()
