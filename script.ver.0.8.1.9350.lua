@@ -14,7 +14,7 @@ function MenuHome()
             "[7] ➤ [MENU] High view",
             "[8] ➤ [MENU] Wallhack / Color",
             "[9] ➤ [COMBO] Badass 「No recoil, Magic Bullet, Aimbot, Antenna, HighViewUp」",
-            "[10] ➤ [COMBO] Normal 「No recoil, Headshot,  Antenna, HighViewUp」」"
+            "[10] ➤ [COMBO] Normal 「No recoil, Headshot,  Antenna」」"
         },
         nil,
         title
@@ -55,7 +55,7 @@ end
 
 function ComboBadass()
     NoRecoil()
-    MagicBullet()
+    Headshot()
     Aimbot()
     Antenna()
     HighViewUp()
@@ -65,7 +65,6 @@ function ComboNormal()
     Headshot()
     NoRecoil()
     Antenna()
-    HighViewUp()
 end
 
 -- //////////  //////////  //////////  //////////  //////////
