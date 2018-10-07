@@ -14,7 +14,8 @@ function MenuHome()
             "[7] ➤ [MENU] High view",
             "[8] ➤ [MENU] Wallhack / Color",
             "[9] ➤ [COMBO] Badass 「No recoil, Magic Bullet, Aimbot, Antenna, HighViewUp」",
-            "[10] ➤ [COMBO] Normal 「No recoil, Headshot,  Antenna, HighViewUp」"
+            "[10] ➤ [COMBO] Normal PC 「No recoil, Headshot,  Antenna, HighViewUp」",
+            "[11] ➤ [COMBO] Normal Mobile 「No recoil, Headshot, HighViewUp, Snapdragon 625, Color Red」",
         },
         nil,
         title
@@ -47,7 +48,10 @@ function MenuHome()
         ComboBadass()
     end
     if menu == 10 then
-        ComboNormal()
+        ComboNormalPC()
+    end
+    if menu == 11 then
+        ComboNormalMobile()
     end
 
     THISSCRIPT = -1
@@ -61,11 +65,19 @@ function ComboBadass()
     HighViewUp()
 end
 
-function ComboNormal()
+function ComboNormalPC()
     Headshot()
     NoRecoil()
     Antenna()
     HighViewUp()
+end
+
+function ComboNormalMobile()
+    Headshot()
+    NoRecoil()
+    HighViewUp()
+    snap625()
+    CLR()
 end
 
 -- //////////  //////////  //////////  //////////  //////////
