@@ -649,7 +649,6 @@ function HighViewHorizontalOff()
     gg.clearResults()
     gg.toast("HighViewHorizontalOff has been active")
 end
-
 -- //////////  //////////  //////////  //////////  //////////
 -- ////////// MenuWallhack
 -- //////////  //////////  //////////  //////////  //////////
@@ -658,234 +657,298 @@ function MenuWallhackColor()
 end
 
 function WHCL()
-    HGTV2 = gg.multiChoice({
-    "🔞 WallHack Snap625",
-    "🔞 WallHack Snap626/625",
-    "🔞 WallHack Snap636",
-    "🔞 WallHack Snap660",
-    "🔞 WallHack Snap825",
-    "🔞 WallHack Snap845",
-    "🔞 WallHack MediaTek",
-    "🔞 Color Orange",
-    "🔞 Color RED",
-    "🔞 Color YELLOW",
-    "🔞 Color GREEN ",
-    "🔞 Color Mix",
-    "🔞 Color Blue",
-    "🔞 Color White (Mediatek)",
-    ' Back'},nil,"🇻🇳[V2. - FIX] SCRIPT PUBG Mobile 0.8.1 \n🇻🇳 Script by CSVN\n🇻🇳 Youtube : CSVN")
+    HGTV2 =
+        gg.multiChoice(
+        {
+            "🔞 WallHack Snap625",
+            "🔞 WallHack Snap626/625",
+            "🔞 WallHack Snap636",
+            "🔞 WallHack Snap660",
+            "🔞 WallHack Snap825",
+            "🔞 WallHack Snap845",
+            "🔞 WallHack MediaTek",
+            "🔞 Color Orange",
+            "🔞 Color RED",
+            "🔞 Color YELLOW",
+            "🔞 Color GREEN ",
+            "🔞 Color Mix",
+            "🔞 Color Blue",
+            "🔞 Color White (Mediatek)",
+            " Back"
+        },
+        nil,
+        title
+    )
     if HGTV2 == nil then
     else
-    if HGTV2[1] == true then snap625() end
-    if HGTV2[2] == true then snap626() end
-    if HGTV2[3] == true then snap636() end
-    if HGTV2[4] == true then snap660() end
-    if HGTV2[5] == true then snap825() end
-    if HGTV2[6] == true then snap845() end
-    if HGTV2[7] == true then MTKHACK() end
-    if HGTV2[8] == true then CLORAN() end
-    if HGTV2[9] == true then CLR() end
-    if HGTV2[10] == true then CLY() end
-    if HGTV2[11] == true then CLG() end
-    if HGTV2[12] == true then CLMIX() end
-    if HGTV2[13] == true then CLB() end
-    if HGTV2[14] == true then CLMTK() end
-    if HGTV2[15] == true then HOME() end
+        if HGTV2[1] == true then
+            snap625()
+        end
+        if HGTV2[2] == true then
+            snap626()
+        end
+        if HGTV2[3] == true then
+            snap636()
+        end
+        if HGTV2[4] == true then
+            snap660()
+        end
+        if HGTV2[5] == true then
+            snap825()
+        end
+        if HGTV2[6] == true then
+            snap845()
+        end
+        if HGTV2[7] == true then
+            MTKHACK()
+        end
+        if HGTV2[8] == true then
+            CLORAN()
+        end
+        if HGTV2[9] == true then
+            CLR()
+        end
+        if HGTV2[10] == true then
+            CLY()
+        end
+        if HGTV2[11] == true then
+            CLG()
+        end
+        if HGTV2[12] == true then
+            CLMIX()
+        end
+        if HGTV2[13] == true then
+            CLB()
+        end
+        if HGTV2[14] == true then
+            CLMTK()
+        end
+        if HGTV2[15] == true then
+            HOME()
+        end
     end
-    end
-    
-    function CLB()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("589826", gg.TYPE_DWORD, false, gg.SING_EQUAL, 0, -1)
-      gg.getResults(20050309)
-      gg.editAll("666666", gg.TYPE_DWORD)
-      gg.toast(" Color Blue Success")
-    end
-    
-    function snap625()
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(10)
-      gg.editAll("130", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(10)
-      gg.editAll("130", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.toast("Success [ 🇻🇳🇻🇳 ]")
-    end
-    function snap626()
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.toast("Success [ 🇻🇳 ]")
-    end
-    
-    function snap636()
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.toast("Success [ 🇻🇳 ]")
-    end
-    function snap660()
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-    gg.toast("Success [ 🇻🇳 ]")
-    end
-    
-    function snap835()
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("5.1097599e21;2.0;1.6623071e-19::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("-0.01000213623;2;-1;0;0.04000854492", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(131072)
-      gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(30)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.toast("Success [ JoytubeJYT ]")
-    end
-    function snap845()
-       gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("5.3680222e21;1.3312335e-43;1.3912563e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("4.8146053e21;2.8866748e-43;1.3912556e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("5.201992e21;4.4028356e-29;2.25000452995;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("4.9252857e21;6.488138e-40;4.9252863e21;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("1.0761972e-42;4.5920551e-41;-1.7632415e-38;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("1.0761972e-42;4.5923353e-41;-1.7632457e-38;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("5.3311276e21;1.3312335e-43;1.391256e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("4.8146041e21;2.8866748e-43;1.3912537e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.toast("Success [ 🇻🇳 ]")
-    end
-    
-    function MTKHACK()
+end
+
+function CLB()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("589826", gg.TYPE_DWORD, false, gg.SING_EQUAL, 0, -1)
+    gg.getResults(20050309)
+    gg.editAll("666666", gg.TYPE_DWORD)
+    gg.toast(" Color Blue Success")
+end
+
+function snap625()
     gg.clearResults()
-      gg.setRanges(gg.REGION_ANONYMOUS)
-      gg.searchNumber("4,141D;4.7408155e21;-5.5693206e-40;4.814603e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("100", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.searchNumber("-1.0285578e-38;3.7615819e-37;2;-1;1;-127::300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(12)
-      gg.editAll("120", gg.TYPE_FLOAT)
-      gg.clearResults()
-      gg.setRanges(gg.REGION_ANONYMOUS)
-      gg.searchNumber("0.05499718338;1.0F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(10)
-      gg.editAll("999", gg.TYPE_FLOAT)
-      gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll("130", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll("130", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Success")
+end
+function snap626()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber(
+        "2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200",
+        gg.TYPE_FLOAT,
+        false,
+        gg.SIGN_EQUAL,
+        0,
+        -1
+    )
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Success")
+end
+
+function snap636()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber(
+        "5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17",
+        gg.TYPE_FLOAT,
+        false,
+        gg.SIGN_EQUAL,
+        0,
+        -1
+    )
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Success")
+end
+function snap660()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber(
+        "2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200",
+        gg.TYPE_FLOAT,
+        false,
+        gg.SIGN_EQUAL,
+        0,
+        -1
+    )
+    gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Success")
+end
+
+function snap835()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("5.1097599e21;2.0;1.6623071e-19::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("-0.01000213623;2;-1;0;0.04000854492", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(131072)
+    gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Success")
+end
+function snap845()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("5.3680222e21;1.3312335e-43;1.3912563e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("4.8146053e21;2.8866748e-43;1.3912556e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("5.201992e21;4.4028356e-29;2.25000452995;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("4.9252857e21;6.488138e-40;4.9252863e21;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("1.0761972e-42;4.5920551e-41;-1.7632415e-38;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("1.0761972e-42;4.5923353e-41;-1.7632457e-38;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("5.3311276e21;1.3312335e-43;1.391256e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("4.8146041e21;2.8866748e-43;1.3912537e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Success")
+end
+
+function MTKHACK()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber(
+        "4,141D;4.7408155e21;-5.5693206e-40;4.814603e21;3.7615819e-37;2:",
+        gg.TYPE_FLOAT,
+        false,
+        gg.SIGN_EQUAL,
+        0,
+        -1
+    )
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("100", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("-1.0285578e-38;3.7615819e-37;2;-1;1;-127::300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(12)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("0.05499718338;1.0F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll("999", gg.TYPE_FLOAT)
+    gg.clearResults()
     gg.toast("Success [ 🇻🇳]")
-    end
-    
-    function CLMTK()
+end
+
+function CLMTK()
     gg.clearResults()
-      gg.setVisible(false)
-      gg.searchNumber("0.05499718338;1::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.setVisible(false)
-      gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(100)
-      gg.editAll("999", gg.TYPE_FLOAT)
-      gg.clearResults()
-    gg.toast("Success [ 🇻🇳 ]")
-    end
-    
-    function CLG()
+    gg.setVisible(false)
+    gg.searchNumber("0.05499718338;1::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.setVisible(false)
+    gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll("999", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Success")
+end
+
+function CLG()
     gg.setRanges(gg.REGION_BAD)
     gg.searchNumber("32,769;-2,134,900,722", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
     gg.searchNumber("32769", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
@@ -893,19 +956,19 @@ function WHCL()
     gg.editAll("32777", gg.TYPE_DWORD)
     gg.clearResults()
     gg.toast("Body Green Success")
-    end
-    
-    function CLY()
+end
+
+function CLY()
     gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("8200;1,080,035,591::512", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(10)
-      gg.editAll("6", gg.TYPE_DWORD)
-      gg.clearResults()
+    gg.searchNumber("8200;1,080,035,591::512", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll("6", gg.TYPE_DWORD)
+    gg.clearResults()
     gg.toast("Body Yellow Success")
-    end
-    
-    function CLMIX()
+end
+
+function CLMIX()
     gg.clearResults()
     gg.setRanges(gg.REGION_BAD)
     gg.searchNumber("538968080D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
@@ -913,39 +976,38 @@ function WHCL()
     gg.getResults(100)
     gg.editAll("-999", gg.TYPE_DWORD)
     gg.toast("Color Mix Success")
-    end
-    
-    
-    function CLR()
-      gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("8,192D;256D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(20)
-      gg.editAll("7", gg.TYPE_DWORD)
-      gg.clearResults()
+end
+
+function CLR()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("8,192D;256D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(20)
+    gg.editAll("7", gg.TYPE_DWORD)
+    gg.clearResults()
     gg.toast("Body Red Success")
-    end
-    
-    function RGB()
-    gg.searchNumber("1.1490647e-41;45,259.0625",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
-    gg.searchNumber("1.1490647e-41",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+end
+
+function RGB()
+    gg.searchNumber("1.1490647e-41;45,259.0625", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1.1490647e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.getResults(10)
     gg.editAll("1.1490647e-37", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.toast("Body RGB Success")
-    end
-    
-    function CLORAN()
+end
+
+function CLORAN()
     gg.clearResults()
-      gg.setRanges(gg.REGION_BAD)
-      gg.searchNumber("1,080,035,591D;196,617D;2.2509765625F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-      gg.searchNumber("1,080,035,591", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-      gg.getResults(10)
-      gg.editAll("1,00,035,591", gg.TYPE_DWORD)
-      gg.clearResults()
-      gg.toast("Success")
-    end
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("1,080,035,591D;196,617D;2.2509765625F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1,080,035,591", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll("1,00,035,591", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("Success")
+end
 
 
 -- //////////  //////////  //////////  //////////  //////////
