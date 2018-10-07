@@ -7,15 +7,13 @@ function MenuHome()
         {
             "[1] ➤ No grass No tree No house",
             "[2] ➤ No recoil",
-            "[3] ➤ Antena prone",
-            "[4]️ ➤ [MENU] Attack",
-            "[5] ➤ [MENU] Antenna / Object",
-            "[6] ➤ [MENU] Vehicle / Speed",
-            "[7] ➤ [MENU] High view",
-            "[8] ➤ [MENU] Wallhack / Color",
-            "[9] ➤ [COMBO] Badass 「No recoil, Magic Bullet, Aimbot, Antenna, HighViewUp」",
-            "[10] ➤ [COMBO] Normal PC 「No recoil, Headshot,  Antenna, HighViewUp」",
-            "[11] ➤ [COMBO] Normal Mobile 「No recoil, Headshot, HighViewUp, Snapdragon 625, Color Red」",
+            "[3]️ ➤ [MENU] Attack",
+            "[4] ➤ [MENU] Antenna / Object",
+            "[5] ➤ [MENU] Vehicle / Speed",
+            "[6] ➤ [MENU] High view",
+            "[7] ➤ [MENU] Wallhack / Color",
+            "[8] ➤ [COMBO] Badass 「No recoil, Magic Bullet, Aimbot, Antenna, HighViewUp」",
+            "[9] ➤ [COMBO] Normal 「No recoil, Headshot,  Antenna, HighViewUp」",
         },
         nil,
         title
@@ -27,31 +25,25 @@ function MenuHome()
         NoRecoil()
     end
     if menu == 3 then
-        AntennaProne()
-    end
-    if menu == 4 then
         MenuAttack()
     end
-    if menu == 5 then
+    if menu == 4 then
         MenuAntennaObject()
     end
-    if menu == 6 then
+    if menu == 5 then
         MenuVehicleSpeed()
     end
-    if menu == 7 then
+    if menu == 6 then
         MenuHighView()
     end
-    if menu == 8 then
+    if menu == 7 then
         MenuWallhackColor()
     end
-    if menu == 9 then
+    if menu == 8 then
         ComboBadass()
     end
-    if menu == 10 then
+    if menu == 9 then
         ComboNormalPC()
-    end
-    if menu == 11 then
-        ComboNormalMobile()
     end
 
     THISSCRIPT = -1
@@ -65,19 +57,11 @@ function ComboBadass()
     HighViewUp()
 end
 
-function ComboNormalPC()
+function ComboNormal()
     Headshot()
     NoRecoil()
     Antenna()
     HighViewUp()
-end
-
-function ComboNormalMobile()
-    Headshot()
-    NoRecoil()
-    HighViewUp()
-    snap625()
-    CLR()
 end
 
 -- //////////  //////////  //////////  //////////  //////////
