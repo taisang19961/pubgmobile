@@ -1,0 +1,76 @@
+gg.setVisible(false)
+gg.toast("__loading__…")
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
+gg.getResults(5000)
+gg.setValues({ -- table(935fd35)
+	[1] = { -- table(2b2125ca)
+		['address'] = 0x62ef8aa0,
+		['flags'] = 4, -- gg.TYPE_DWORD
+		['value'] = '0',
+	},
+	[2] = { -- table(3adcd33b)
+		['address'] = 0x6ab44060,
+		['flags'] = 4, -- gg.TYPE_DWORD
+		['value'] = '0',
+	},
+	[3] = { -- table(33041a58)
+		['address'] = 0x79641fc0,
+		['flags'] = 4, -- gg.TYPE_DWORD
+		['value'] = '1126222745',
+	},
+	[4] = { -- table(30d637b1)
+		['address'] = 0x8221f5c0,
+		['flags'] = 4, -- gg.TYPE_DWORD
+		['value'] = '257',
+	},
+	[5] = { -- table(1413d496)
+		['address'] = 0x82d54060,
+		['flags'] = 4, -- gg.TYPE_DWORD
+		['value'] = '0',
+	},
+})
+gg.alert("🇻🇳Script Vip Việt Nam 0.8.1 V6 By VN Game Mod & VNG Channel")
+--[[ return: 1 ]]
+gg.setVisible(false)
+gg.alert("☠️Bạn Muốn Sử Dụng Siêu Bypass?", "👽bypass là gì?", "💀Không", "👹Có")
+--[[ return: 2 ]]
+gg.setVisible(false)
+gg.choice({ -- table(38f81000)
+	[1] = '⏺️Chống Niêm Phong/lobby',
+	[2] = '⏺️Menu Vip',
+	[3] = '⏺️WH & Color/lobby',
+	[4] = '⏺️In Game Atenna/Phong Cảnh',
+	[5] = '⏺️In Game Jeep',
+	[6] = '⏺️In Game High View/Speed Hack',
+	[7] = '⏺️In Game Speed Gun',
+	[8] = '⏺️EXIT',
+}, nil, "🇻🇳 SCRIPT VIP VIỆT NAM 0.8.1V6
+ 🇻🇳BY VN GameMod
+ 🇻🇳YouTube👉VNG Channel")
+--[[ return: 4 ]]
+gg.multiChoice({ -- table(303d3e48)
+	[ 1] = '⏺️Atenna Đạn 5.5mm',
+	[ 2] = '⏺️New Antenna',
+	[ 3] = '⏺️Antenna Ký Tự',
+	[ 4] = '⏺️Atenna Exynos',
+	[ 5] = '⏺️Nhảy Cao',
+	[ 6] = '⏺️No Grass/tre 0.8.0',
+	[ 7] = '⏺️No Grass 080',
+	[ 8] = '⏺️Weapon Antenna/Ăng Ten Vũ Khí',
+	[ 9] = '⏺️Black Sky/Bầu Trời Tối',
+	[10] = '⏺️Black Sky SD 425/410',
+	[11] = '⏺️Màu Đất New',
+	[12] = '⏺️Atenna Súng Thính/in game',
+	[13] = '⏺️Back',
+}, nil, "🇻🇳Menu Atena")
+--[[ return: { -- table(283b3a53)
+	[6] = true,
+} ]]
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.clearResults()
+gg.searchNumber("5126;3;67584::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("3", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.toast("NO GRASS 0.8.0 XONG")

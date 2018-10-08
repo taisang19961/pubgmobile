@@ -1,0 +1,313 @@
+gg.setVisible(false)
+gg.toast("__loading__…")
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
+gg.getResults(5000)
+gg.setValues({ -- table(289f80a4)
+})
+gg.alert("⚫️ DTamvan V2.5 PUBG Mobile 0.8.1
+⚫️ Script by DroidTamvan
+⚫️ Youtube Channel: DTamvan
+⚫️ Site: www.droidtamvan.me")
+--[[ return: 1 ]]
+gg.setVisible(false)
+gg.choice({ -- table(36c4e996)
+	[ 1] = '🔰 New Bypass (Open After Tencent Logo)',
+	[ 2] = '📂 WallHack & Color Menu [Lobby}',
+	[ 3] = '🔸 No Recoil [In Game After Pick New Gun]',
+	[ 4] = '🔸 Medium Aimbot [In Game Best For Close Range]',
+	[ 5] = '🔸 Magic Bullet+HeadShot [Lobby]',
+	[ 6] = '🔸 Antena Run [In Game]',
+	[ 7] = '🔸 Antena Always [In Game]',
+	[ 8] = '🔸 Lift Sit Scope [In Game]',
+	[ 9] = '🔸 No Grass [Use In Game Erangel Only]',
+	[10] = '🔸 Black Sky [Use In Game]',
+	[11] = '________||EXIT||________',
+	[12] = 'INFORMATION DROIDTAMVAN',
+}, nil, "⛔ DTamvan V2.5
+⛔ Script By DroidTamvan
+⛔ Youtube: DTamvan
+⛔ Site: www.droidtamvan.me")
+--[[ return: 2 ]]
+gg.multiChoice({ -- table(297a8a59)
+	[ 1] = '🔸 WallHack Snapdragon 435',
+	[ 2] = '🔸 WallHack Snapdragon 625',
+	[ 3] = '🔸 WallHack Snapdragon 635',
+	[ 4] = '🔸 WallHack Snapdragon 636',
+	[ 5] = '🔸 WallHack Snapdragon 660',
+	[ 6] = '🔸 WallHack Snapdragon 835',
+	[ 7] = '🔸 WallHack Snapdragon 845',
+	[ 8] = '🔸 Body Crystal',
+	[ 9] = '🔸 Body Green',
+	[10] = '🔸 Body Yellow',
+	[11] = '🔸 Body Pixel',
+	[12] = '🔸 Body Blue HDR',
+	[13] = '🔸 Body Red HDR',
+	[14] = '🔸 Body Red',
+	[15] = '🔸 Body White All Device',
+	[16] = '🔸 Body Black All Device',
+	[17] = '♻ BACK',
+}, nil, "WallHack & Color Menu")
+--[[ return: { -- table(37acfb94)
+	[ 1] = true,
+	[ 2] = true,
+	[ 3] = true,
+	[ 4] = true,
+	[ 5] = true,
+	[ 6] = true,
+	[ 7] = true,
+	[ 8] = true,
+	[ 9] = true,
+	[10] = true,
+	[11] = true,
+	[12] = true,
+	[13] = true,
+	[14] = true,
+	[15] = true,
+	[16] = true,
+} ]]
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("WallHack Snapdragon Snap 435 Activated")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("WallHack Snapdragon Snap 625 Activated")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("WallHack Snapdragon 635 Activate")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("WallHack Snapdragon Snap 636 Activated")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("WallHack Snapdragon Snap 660 Activated")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.1097599e21;2.0;1.6623071e-19::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("-0.01000213623;2;-1;0;0.04000854492", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("WallHack Snapdragon Snap 835 Activated")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.3680222e21;1.3312335e-43;1.3912563e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.8146053e21;2.8866748e-43;1.3912556e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.201992e21;4.4028356e-29;2.25000452995;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.9252857e21;6.488138e-40;4.9252863e21;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1.0761972e-42;4.5920551e-41;-1.7632415e-38;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1.0761972e-42;4.5923353e-41;-1.7632457e-38;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.3311276e21;1.3312335e-43;1.391256e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.8146041e21;2.8866748e-43;1.3912537e-19;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("WallHack Snapdragon 845 Activated")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,080,035,591D;196,617D;2.2509765625F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1,080,035,591", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("1,00,035,591", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Successful Activation")
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("32,769;-2,134,900,722", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("32769", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("32777", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Successful Activation")
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8200;1,080,035,591::512", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Successful Activation")
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("589826", gg.TYPE_DWORD, false, nil, 0, -1)
+gg.getResults(20050309)
+gg.editAll("666666", gg.TYPE_DWORD)
+gg.toast("Successful Activation")
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("589826", gg.TYPE_DWORD, false, nil, 0, -1)
+gg.getResults(20050309)
+gg.editAll("666666", gg.TYPE_DWORD)
+gg.toast("Successful Activation")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,080,035,591D;196,617D;2.2509765625F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1,080,035,591", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("1,00,035,591", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Successful Activation")
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8,196D;8,192D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("7", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Successful Activation")
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.05499718338;1.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("9999", gg.TYPE_FLOAT)
+gg.toast("Body White has been active")
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.05499718338;1.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("-9999", gg.TYPE_FLOAT)
+gg.toast("Body Black has been active")
+gg.setVisible(false)
+gg.choice({ -- table(1dfc6851)
+	[ 1] = '🔰 New Bypass (Open After Tencent Logo)',
+	[ 2] = '📂 WallHack & Color Menu [Lobby}',
+	[ 3] = '🔸 No Recoil [In Game After Pick New Gun]',
+	[ 4] = '🔸 Medium Aimbot [In Game Best For Close Range]',
+	[ 5] = '🔸 Magic Bullet+HeadShot [Lobby]',
+	[ 6] = '🔸 Antena Run [In Game]',
+	[ 7] = '🔸 Antena Always [In Game]',
+	[ 8] = '🔸 Lift Sit Scope [In Game]',
+	[ 9] = '🔸 No Grass [Use In Game Erangel Only]',
+	[10] = '🔸 Black Sky [Use In Game]',
+	[11] = '________||EXIT||________',
+	[12] = 'INFORMATION DROIDTAMVAN',
+}, nil, "⛔ DTamvan V2.5
+⛔ Script By DroidTamvan
+⛔ Youtube: DTamvan
+⛔ Site: www.droidtamvan.me")
+--[[ return: nil ]]
+gg.setVisible(false)
+gg.choice({ -- table(26e13e33)
+	[ 1] = '🔰 New Bypass (Open After Tencent Logo)',
+	[ 2] = '📂 WallHack & Color Menu [Lobby}',
+	[ 3] = '🔸 No Recoil [In Game After Pick New Gun]',
+	[ 4] = '🔸 Medium Aimbot [In Game Best For Close Range]',
+	[ 5] = '🔸 Magic Bullet+HeadShot [Lobby]',
+	[ 6] = '🔸 Antena Run [In Game]',
+	[ 7] = '🔸 Antena Always [In Game]',
+	[ 8] = '🔸 Lift Sit Scope [In Game]',
+	[ 9] = '🔸 No Grass [Use In Game Erangel Only]',
+	[10] = '🔸 Black Sky [Use In Game]',
+	[11] = '________||EXIT||________',
+	[12] = 'INFORMATION DROIDTAMVAN',
+}, nil, "⛔ DTamvan V2.5
+⛔ Script By DroidTamvan
+⛔ Youtube: DTamvan
+⛔ Site: www.droidtamvan.me")

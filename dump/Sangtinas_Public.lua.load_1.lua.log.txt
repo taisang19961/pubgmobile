@@ -1,0 +1,2 @@
+gg.toast("Website: sangtinas.sytes.net")
+gg.makeRequest("http://sangtinas.sytes.net/public/Public_AutoUpdate.html")

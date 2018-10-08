@@ -14,6 +14,7 @@ function MenuHome()
             "[7] ➤ [COMBO] PC InGame (No recoil, Antenna, HighViewUp)",
             "[8] ➤ [COMBO] Mobile Lobby (Headshot, Body Red, Wallhack)",
             "[9] ➤ [COMBO] Mobile InGame (No recoil, Antenna, HighViewUp)",
+            "[10] ➤ AntiBan",
         },
         nil,
         title
@@ -44,6 +45,9 @@ function MenuHome()
     end 
     if menu == 9 then
         ComboMobileInGame()
+    end 
+    if menu == 10 then
+        AntiBan()
     end 
     THISSCRIPT = -1
 end
@@ -754,18 +758,23 @@ function CLB()
 end
 
 function snap625()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("2.0;4.7961574e21;4.7408166e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.setRanges(gg.REGION_BAD)
-    gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2.0;4.8699472e21;4.8699466e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(10)
-    gg.editAll("130", gg.TYPE_FLOAT)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.setRanges(gg.REGION_BAD)
-    gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2.0;4.7777152e21;4.7777146e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(10)
-    gg.editAll("130", gg.TYPE_FLOAT)
+    gg.getResults(30)
+    gg.editAll("120", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.toast("Success")
 end
@@ -1110,6 +1119,17 @@ function BypassEmulator()
     gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
     gg.clearResults(850)
     gg.toast("Bypass Emulator has been active")
+end
+
+function AntiBan()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.searchNumber("257;2131;0F~99999F;0::50", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("0F~99999F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll("0", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("AntiBan has been active")
 end
 
 function Tutorial()
