@@ -8,12 +8,12 @@ function MenuHome()
             "[1] ➤ No grass No tree No house",
             "[2] ➤ No recoil",
             "[3]️ ➤ [MENU] Attack",
-            "[4] ➤ [MENU] Antenna / Object",
-            "[5] ➤ [MENU] Vehicle / Speed",
-            "[6] ➤ [MENU] High view",
-            "[7] ➤ [MENU] Wallhack / Color",
-            "[8] ➤ [COMBO] Badass 「No recoil, Magic Bullet, Aimbot, Antenna, HighViewUp」",
-            "[9] ➤ [COMBO] Normal 「No recoil, Headshot,  Antenna, HighViewUp」",
+            "[4] ➤ [MENU] View",
+            "[5] ➤ [MENU] Wallhack / Color",
+            "[6] ➤ [COMBO] PC Lobby (Headshot, Body Black)",
+            "[7] ➤ [COMBO] PC InGame (No recoil, Antenna, HighViewUp)",
+            "[8] ➤ [COMBO] Mobile Lobby (Headshot, Body Red, Wallhack)",
+            "[9] ➤ [COMBO] Mobile InGame (No recoil, Antenna, HighViewUp)",
         },
         nil,
         title
@@ -27,38 +27,42 @@ function MenuHome()
     if menu == 3 then
         MenuAttack()
     end
-    if menu == 4 then
-        MenuAntennaObject()
+    if menu == 4 then 
+        MenuView()
     end
     if menu == 5 then
-        MenuVehicleSpeed()
-    end
-    if menu == 6 then
-        MenuHighView()
-    end
-    if menu == 7 then
         MenuWallhackColor()
     end
+    if menu == 6 then
+        ComboPCLobby()
+    end
+    if menu == 7 then
+        ComboPCInGame()
+    end
     if menu == 8 then
-        ComboBadass()
-    end
+        ComboMobileLobby()
+    end 
     if menu == 9 then
-        ComboNormalPC()
-    end
-
+        ComboMobileInGame()
+    end 
     THISSCRIPT = -1
 end
 
-function ComboBadass()
-    NoRecoil()
+function ComboPCLobby()
     Headshot()
-    Aimbot()
+    BodyBlack()
+end
+function ComboPCInGame()
+    NoRecoil()
     Antenna()
     HighViewUp()
 end
-
-function ComboNormal()
+function ComboMobileLobby()
     Headshot()
+    CLR()
+    snap625()
+end
+function ComboMobileInGame()
     NoRecoil()
     Antenna()
     HighViewUp()
@@ -72,12 +76,16 @@ function MenuAttack()
     menu =
         gg.multiChoice(
         {
-            "[1] ➤ Aimbot\n↪ 「Lobby」「Landed」「Once」",
-            "[2] ➤ Headshot\n↪ 「Lobby」「Landed」「Once」",
-            "[3] ➤ Magic Bullet\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[4] ➤ Wallshoot\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[5] ➤ Small Crosshair\n↪ 「Lobby」「Landed」「Once」",
-            "[6] ➤ No Recoil\n↪ 「Lobby」「Landed」「Once」",
+            "[1] ➤ Aimbot",
+            "[2] ➤ Headshot",
+            "[3] ➤ Magic Bullet",
+            "[4] ➤ Wallshoot",
+            "[5] ➤ Small Crosshair",
+            "[6] ➤ No Recoil",
+            "[7] ➤ Speedhack On",
+            "[8] ➤ Speedhack Off",
+            "[9] ➤ Jeep under water",
+            "[10] ➤ High jump",
         },
         nil,
         title
@@ -103,19 +111,16 @@ function MenuAttack()
             NoRecoil()
         end
         if menu[7] == true then
-            HighViewUp()
+            SpeedHack()
         end
         if menu[8] == true then
-            HighViewUpOff()
+            SpeedHackOff()
         end
         if menu[9] == true then
-            HighViewHorizontal()
+            JEEPSUBMARINE()
         end
         if menu[10] == true then
-            HighViewHorizontalOff()
-        end
-        if menu[11] == true then
-            MenuHome()
+            HIGHJUMP()
         end
     end
 
@@ -245,20 +250,22 @@ function Headshot()
 end
 
 -- //////////  //////////  //////////  //////////  //////////
--- ////////// MenuAntennaObject
+-- ////////// MenuView
 -- //////////  //////////  //////////  //////////  //////////
 
-function MenuAntennaObject()
+function MenuView()
     menu =
         gg.multiChoice(
         {
-            "[1] ➤ Antenna Full\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[2] ➤ Antenna Prone\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[3] ➤ Antenna Stick\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[4] ➤ Remove Grass\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[5] ➤ Remove Grass/Tree/House \n↪ 「Ingame」「Landed」「Temporary」",
-            "[6] ➤ Body Black \n↪ 「Lobby」「Once」",
-            "[7] ➤ Body White \n↪ 「Lobby」「Once」",
+            "[1] Antenna Full",
+            "[2] Antenna Prone",
+            "[3] Antenna Stick",
+            "[4] Remove Grass",
+            "[5] Remove Grass/Tree/House",
+            "[6] Body Black",
+            "[7] Body White",
+            "[8] HighViewUp On",
+            "[9] HighViewUp Off",
         },
         nil,
         title
@@ -287,7 +294,10 @@ function MenuAntennaObject()
             BodyWhite()
         end
         if menu[8] == true then
-            MenuHome()
+            HighViewUp()
+        end
+        if menu[9] == true then
+            HighViewUpOff()
         end
     end
 
@@ -297,7 +307,6 @@ end
 function Antenna()
     AntennaSide()
     AntennaAlways()
-    AntennaProne()
 end
 
 function AntennaSide()
@@ -455,12 +464,12 @@ function MenuVehicleSpeed()
     menu =
         gg.multiChoice(
         {
-            "[1] ➤ Buggy Through Wall\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[2] ➤ Jeep Car Submarine\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[3] ➤ Jeep Car Speed\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[4] ➤ Jeep Car Mountain Climbing\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[5] ➤ Speedhack\n↪ 「Lobby」「Landed」「Once」",
-            "[6] ➤ Speedhack Off\n↪ 「Lobby」「Landed」「Once」",
+            "[1] ➤ Buggy Through Wall",
+            "[2] ➤ Jeep Car Submarine",
+            "[3] ➤ Jeep Car Speed",
+            "[4] ➤ Jeep Car Mountain Climbing",
+            "[5] ➤ Speedhack",
+            "[6] ➤ Speedhack Off"
         },
         nil,
         title
@@ -576,10 +585,11 @@ function MenuHighView()
     menu =
         gg.multiChoice(
         {
-            "[1] ➤ High View Up\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[2] ➤ OFF High View\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[3] ➤ High View Horizontal\n↪ 「Ingame」「Landed」「Everymatch」",
-            "[4] ➤ OFF High View Horizontal\n↪ 「Ingame」「Landed」「Everymatch」",
+            "[1] ➤ High View Up",
+            "[2] ➤ OFF High View",
+            "[3] ➤ High View Horizontal",
+            "[4] ➤ OFF High View Horizontal",
+            "[5] ➤  High Jump"
         },
         nil,
         title
@@ -600,11 +610,23 @@ function MenuHighView()
             HighViewHorizontalOff()
         end
         if menu[5] == true then
-            MenuHome()
+            HIGHJUMP()
         end
     end
 
     THISSCRIPT = -1
+end
+
+
+function HIGHJUMP()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("-0.70710676908F;0.70710670948F;64.0F;128D;1D::512", gg.TYPE_AUTO, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(1995)
+    gg.editAll("2", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("Multi Jump Active!")
 end
 
 function HighViewUp()
@@ -1005,7 +1027,6 @@ function CLORAN()
     gg.toast("Success")
 end
 
-
 -- //////////  //////////  //////////  //////////  //////////
 -- ////////// Bypass
 -- //////////  //////////  //////////  //////////  //////////
@@ -1088,7 +1109,8 @@ function BypassEmulator()
 end
 
 function Tutorial()
-    print([[
+    print(
+        [[
 |[ TUTORIAL ]|
 
 (*) Open your gameguardian app (when selected process popup, press back button).
@@ -1102,7 +1124,8 @@ function Tutorial()
 
 - Video : https://youtu.be/RWn8R5P9FDc
 
-]])
+]]
+    )
 end
 
 gg.setVisible(false)
