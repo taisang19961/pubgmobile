@@ -125,3 +125,16 @@ gg.getResults(30)
 gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast(" New SD 625 Xong")
+gg.setVisible(false)
+gg.choice({ -- table(a52e92d)
+	[1] = '⏺️Chống Niêm Phong/lobby',
+	[2] = '⏺️Menu Vip',
+	[3] = '⏺️WH & Color/lobby',
+	[4] = '⏺️In Game Atenna/Phong Cảnh',
+	[5] = '⏺️In Game Jeep',
+	[6] = '⏺️In Game High View/Speed Hack',
+	[7] = '⏺️In Game Speed Gun',
+	[8] = '⏺️EXIT',
+}, nil, "🇻🇳 SCRIPT VIP VIỆT NAM 0.8.1V6
+ 🇻🇳BY VN GameMod
+ 🇻🇳YouTube👉VNG Channel")
