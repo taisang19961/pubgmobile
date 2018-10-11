@@ -564,23 +564,12 @@ end
 
 function SpeedHack()
     gg.clearResults()
-    gg.setRanges(gg.REGION_CODE_APP)
-    gg.searchNumber("10.90734863281;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("10.90734863281", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(300)
-    gg.editAll("10.3111", gg.TYPE_FLOAT)
-    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("0;7.0064923e-45;1;100;1;2,500,000,000.0;0.10000000149;88", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll("2", gg.TYPE_FLOAT)
     gg.toast("SpeedHack has been active")
-end
-
-function SpeedHackOff()
-    gg.setRanges(gg.REGION_CODE_APP)
-    gg.searchNumber("10.3111;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("10.3111", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(300)
-    gg.editAll("10.90734863281", gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.toast("SpeedHack has been deactive")
 end
 -- //////////  //////////  //////////  //////////  //////////
 -- ////////// MenuHighView
