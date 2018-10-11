@@ -10,8 +10,8 @@ function MenuHome()
             "[3]️ ➤ [MENU] Attack",
             "[4] ➤ [MENU] View",
             "[5] ➤ [MENU] Wallhack / Color",
-            "[6] ➤ [COMBO] PC Lobby (Headshot, Body Black)",
-            "[7] ➤ [COMBO] PC InGame (No recoil, Antenna, HighViewUp)",
+            "[6] ➤ [COMBO] PC InGame (Headshot, No recoil, Antenna, HighViewUp)",
+            "[7] ➤ [COMBO] PC InGame Second (Headshot, No recoil, Antenna Stick, HighViewUp)",
             "[8] ➤ [COMBO] Mobile Lobby (Headshot, Body Red, Wallhack)",
             "[9] ➤ [COMBO] Mobile InGame (No recoil, Antenna, HighViewUp)",
             "[10] ➤ AntiBan",
@@ -35,10 +35,10 @@ function MenuHome()
         MenuWallhackColor()
     end
     if menu == 6 then
-        ComboPCLobby()
+        ComboPCInGame()
     end
     if menu == 7 then
-        ComboPCInGame()
+        ComboPCInGameSecond()
     end
     if menu == 8 then
         ComboMobileLobby()
@@ -52,11 +52,14 @@ function MenuHome()
     THISSCRIPT = -1
 end
 
-function ComboPCLobby()
+function ComboPCInGameSecond()
     Headshot()
-    BodyBlack()
+    NoRecoil()
+    AntennaStick()
+    HighViewUp()
 end
 function ComboPCInGame()
+    Headshot()
     NoRecoil()
     Antenna()
     HighViewUp()
