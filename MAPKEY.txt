@@ -10,7 +10,7 @@ touch 1400 940
 wait 50
 switch-mouse
 
-# <O> no recoil 484 496
+# <N> no recoil 484 496
 size 1920 1080
 switch-mouse
 wait 50
