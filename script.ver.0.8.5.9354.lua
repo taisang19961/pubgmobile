@@ -10,7 +10,7 @@ function MenuHome()
     choice =
         gg.choice(
         {
-            [1] = "⛰️ Ẩn cỏ, cây, nhà",
+            [1] = "👀 Ẩn cỏ, cây, nhà",
             [2] = "🔫 Giảm giật",
             [3] = "📁 Chức năng",
             [4] = "📁 Wallhack Color",
@@ -55,7 +55,7 @@ function MenuChucNang()
             [6] = "👢 Ngồi cao",
             [7] = "🌱 Xóa cỏ",
             [8] = "⬛ Trời tối",
-            [9] = "👁️ Ẩn cỏ, cây, nhà",
+            [9] = "👀 Ẩn cỏ, cây, nhà",
             [10] = "🚗 Xe chạy dưới nước",
             [11] = "👟 Chạy nhanh v1",
             [12] = "👞 Chạy nhanh v2"
