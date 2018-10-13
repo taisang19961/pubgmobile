@@ -149,7 +149,6 @@ function OneclickLobby()
 end
 function OneclickIngame()
     GiamGiat()
-    NgoiCao()
     ChayNhanhV1()
 end
 
