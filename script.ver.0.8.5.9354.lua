@@ -33,10 +33,10 @@ function MenuHome()
     if choice == 3 then
         MenuWallHackColor()
     end
-    if choice == 4 then
+    if choice == 5 then
         OneclickLobby()
     end
-    if choice == 5 then
+    if choice == 6 then
         OneclickIngame()
     end
 
