@@ -1,2 +1,0 @@
-gg.makeRequest("https://raw.githubusercontent.com/taisang19961/pubgmobile/master/loader.lua")
-gg.makeRequest("https://rawgit.com/taisang19961/pubgmobile/master/script.ver.0.8.5.9354.lua")

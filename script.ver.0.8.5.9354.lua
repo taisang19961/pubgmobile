@@ -52,7 +52,7 @@ function MenuChucNang()
             [3] = "🔫 Giảm giật",
             [4] = "🔫 Không giật",
             [5] = "📡 Antenna",
-            [6] = "👢 Ngồi cao",
+            [6] = "👢 HighView",
             [7] = "🌱 Xóa cỏ",
             [8] = "⬛ Trời tối",
             [9] = "👀 Ẩn cỏ, cây, nhà",
@@ -82,7 +82,7 @@ function MenuChucNang()
             Antenna()
         end
         if choice[6] == true then
-            NgoiCao()
+            MenuHighView()
         end
         if choice[7] == true then
             XoaCo()
@@ -107,11 +107,136 @@ function MenuChucNang()
     THISSCRIPT = -1
 end
 
+function MenuHighView()
+    choice =
+        gg.multiChoice(
+        {
+            [1] = "HighviewSit",
+            [2] = "HighviewStandLeft",
+            [3] = "HighviewStandRight",
+            [4] = "HighviewLow",
+            [5] = "HighviewOffAll"
+        },
+        nil,
+        title
+    )
+
+    if choice == nil then
+    else
+        if choice[1] == true then
+            HighviewSit()
+        end
+        if choice[2] == true then
+            HighviewStandLeft()
+        end
+        if choice[3] == true then
+            HighviewStandRight()
+        end
+        if choice[4] == true then
+            HighviewLow()
+        end
+        if choice[5] == true then
+            HighviewOffAll()
+        end
+    end
+
+    THISSCRIPT = -1
+end
+
 function OneclickLobby()
     Headshot()
     Antenna()
 end
 function OneclickIngame()
+    GiamGiat()
+    NgoiCao()
+    ChayNhanhV1()
+end
+
+function HighviewOffAll()
+    HighviewSitOff()
+    HighviewStandLeftOff()
+    HighviewStandRightOff()
+    HighviewLowOff()
+end
+
+function HighviewSit()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll("1,135,081,726", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("HighviewSit")
+end
+
+function HighviewSitOff()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("1,135,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("135,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(50)
+    gg.editAll("1,092,081,726", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("HighviewSitOff")
+end
+
+function HighviewStandLeft()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("0.53446006775", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(150)
+    gg.editAll("388.888", gg.TYPE_FLOAT)
+    gg.toast("HighviewStandLeft")
+end
+
+function HighviewStandLeftOff()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("388.888", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(150)
+    gg.editAll("0.53446006775", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("HighviewStandLeftOff")
+end
+
+function HighviewStandRight()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("0.53446006775", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(150)
+    gg.editAll("-150.999", gg.TYPE_FLOAT)
+    gg.toast("HighviewStandRight")
+end
+
+function HighviewStandRightOff()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("-150.999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(150)
+    gg.editAll("0.53446006775", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("HighviewStandRightOff")
+end
+
+function HighviewLow()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("0.53446006775", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(150)
+    gg.editAll("-399.999", gg.TYPE_FLOAT)
+    gg.toast("HighviewLow")
+end
+
+function HighviewLowOff()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("-399.999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(150)
+    gg.editAll("0.53446006775", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("HighviewLowOff")
 end
 
 function Aimbot()
@@ -191,17 +316,6 @@ function Antenna()
     gg.editAll("999", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.toast("Antenna")
-end
-
-function NgoiCao()
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(100)
-    gg.editAll("1,135,081,726", gg.TYPE_DWORD)
-    gg.clearResults()
-    gg.toast("NgoiCao")
 end
 
 function XoaCo()
