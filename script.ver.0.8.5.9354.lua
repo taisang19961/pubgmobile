@@ -51,7 +51,8 @@ function MenuChucNang()
             [2] = "💀 Headshot",
             [3] = "🔫 Giảm giật",
             [4] = "🔫 Không giật",
-            [5] = "📡 Antenna",
+            [5] = "📡 Antenna v1 đầu",
+            [51] = "📡 Antenna v2 thường",
             [6] = "👢 HighView",
             [7] = "🌱 Xóa cỏ",
             [8] = "⬛ Trời tối",
@@ -79,7 +80,10 @@ function MenuChucNang()
             KhongGiat()
         end
         if choice[5] == true then
-            Antenna()
+            Antennav1Dau()
+        end
+        if choice[51] == true then
+            Antennav2Thuong()
         end
         if choice[6] == true then
             MenuHighView()
@@ -145,11 +149,9 @@ end
 
 function OneclickLobby()
     Headshot()
-    Antenna()
+    Antennav1Dau()
 end
 function OneclickIngame()
-    GiamGiat()
-    ChayNhanhV1()
 end
 
 function HighviewOffAll()
@@ -301,8 +303,7 @@ function GiamGiat()
     gg.editAll("176293392", gg.TYPE_DWORD)
     gg.toast("GiamGiat")
 end
-
-function Antenna()
+function Antennav1Dau()
     gg.clearResults()
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.searchNumber("88.50576019287F;87.27782440186F;1F::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -315,6 +316,41 @@ function Antenna()
     gg.editAll("999", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.toast("Antenna")
+end
+
+function Antennav2Thuong()
+    gg.searchNumber("18.38613319397F;0.53447723389F;3.42665576935F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("18.38613319397;0.53447723389;3.42665576935", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(3)
+    gg.editAll("399999", gg.TYPE_FLOAT)
+    gg.toast("Antenna Side")
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.clearResults()
+    gg.searchNumber("0.53446006775F;-1.68741035461F:501", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("-1.68741035461", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(1995)
+    gg.editAll("29995", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(1995)
+    gg.editAll("29995", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Antenna Always")
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("1.0;0.9537679553;0.06111789867", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll("99999", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Antenna Backpack")
+    gg.clearResults(850)
+    gg.searchNumber("0.9378669858F;1.0F;0.61365610361F::55", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(850)
+    gg.editAll("3500", gg.TYPE_FLOAT)
+    gg.toast("Antena Prone")
 end
 
 function XoaCo()
